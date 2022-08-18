@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="static/assets/images/favicon.png">
+    <title>my portfolio</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="../../static/css/templatemo-style.css">
+
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+{% block content %}
+ <section class="bannerr">
+        <div class="container">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="media">
+                      <img class="media-object" src="../../app/static/img/404.png"
+                           alt="404" width="500" height="400"/>
+                  </div>
+                </div>
+        </div>
+     <h1>Oops page not found</h1>
+     <p>that page does not exist. please try a different location</p>
+     <p><a href="{{ url_for('main.index') }}">please go back to the home page </a></p>
+    </section>
+{% endblock content %}
+</body>
+
+</html>
+
+
