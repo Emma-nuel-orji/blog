@@ -2,7 +2,7 @@
 {% block content %}
   {% for post in posts.items %}
     <br>
-    <article class="container " style="border: 1px solid black; width: 50%; display: flex; padding-top: 10px">
+    <article class="containerr " style="border: 1px solid black; width: 100%; display: flex; padding-top: 10px; padding: 20px">
       <img class="rounded-circle img-circle"  src="{{url_for('static', filename='img/' + post.author.image_file) }}" height="60" width="60">
       <div class="media-body" style="padding-left: 8px">
         <div class="article-metadata" style="border-bottom:1px solid silver">
@@ -10,7 +10,8 @@
           <small class="text-muted">{{post.date_posted.strftime('%Y-%m-%d')}}</small>
         </div>
         <h3><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">{{post.title}}</a></h3>
-        <p class="article-content">{{post.content}}</p>
+<!--        <p class="article-content" >{{post.content}}</p>-->
+          <a href="{{ url_for('posts.post', post_id=post.id) }}">Read the contents >>></a>
       </div>
     </article>
 {% endfor %}

@@ -612,6 +612,19 @@ progress {
   color: #a1acb8;
 }
 
+.containerr-fluid,
+.containerr-xxl,
+.containerr-xl,
+.container-lg,
+.containerr-md,
+.containerr-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 1.2rem);
+  padding-left: var(--bs-gutter-x, 1.2rem);
+  margin-right: auto;
+  margin-left: auto;
+
+
 .container,
 .container-fluid,
 .container-xxl,
